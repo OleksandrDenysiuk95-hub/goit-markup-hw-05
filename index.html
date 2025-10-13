@@ -480,24 +480,32 @@
     <div class="modal-overlay">
       <div class="modal">
         <form action="form" class="form" id="form">
-        <svg class="closebtn" width="8" height="8">
+          <div class="closebtn">
+        <svg class="closeicon" width="8" height="8">
           <use href="./images/icons.svg#icon-closebtn"></use>
         </svg>
-        <p class="form-title">Leave your contacts and we will call you back</p>
+        </div>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
         <div class="form-field form-field-name">
           <label for="user-name" class="form-field-label">Name</label>
           <input type="text" id="user-name" class="form-input" required />
-          <svg class="closebtn" width="18" height="18">
+          <svg class="personicon" width="18" height="18">
           <use href="./images/icons.svg#icon-personicon"></use>
         </svg>
         </div>
         <div class="form-field form-field-phone">
           <label for="user-phone" class="form-field-label">Phone</label>
           <input type="tel" id="user-phone" class="form-input" required />
+           <svg class="phoneicon" width="18" height="24">
+          <use href="./images/icons.svg#icon-phoneicon"></use>
+        </svg>
         </div>
         <div class="form-field form-field-email">
           <label for="user-email" class="form-field-label">Email</label>
           <input type="email" id="user-email" class="form-input" required />
+          <svg class="emailicon" width="18" height="24">
+          <use href="./images/icons.svg#icon-emailicon"></use>
+        </svg>
         </div>
         <div class="form-field form-field-comment"></div>
         <label class="form-label">
@@ -508,10 +516,14 @@
       placeholder="Text input"
         rows="5">
     </textarea>
+    <svg class="checkicon" width="16" height="16">
+          <use href="./images/icons.svg#icon-checkbox"></use>
+        </svg>
+    <p>I accept the terms and conditions of the Privacy Policy</p>
   </label>
   </div>
 
-        <button type="submit" class="form-btn" id="launch-btn">
+        <button type="submit" class="form-btn">
           Send
         </button>
       </form>
