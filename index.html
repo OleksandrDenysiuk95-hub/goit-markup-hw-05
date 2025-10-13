@@ -454,7 +454,68 @@
             </li>
           </ul>
         </div>
+        <div class="footer-email">
+           <form action="form" class="form" id="form">
+          <p class="footer-subscr-text">Subscribe</p>
+          <div class="footer-btn">
+           <label for="user-email" class="footer-email-label">
+            
+          <input type="email" id="user-email" class="form-input" placeholder="Email" />
+          
+          </label>
+    
+          
+          <button type="submit" class="footer-emailbtn">
+            Subscribe
+           <svg class="footer-icon-subscr" width="24" height="24">
+                  <use href="./images/icons.svg#icon-subscbtn"></use>
+                </svg>
+          </button>
+                </div>
+          </div>
+          </form>
+        </section>
       </div>
     </footer>
+    <div class="modal-overlay">
+      <div class="modal">
+        <form action="form" class="form" id="form">
+        <svg class="closebtn" width="8" height="8">
+          <use href="./images/icons.svg#icon-closebtn"></use>
+        </svg>
+        <p class="form-title">Leave your contacts and we will call you back</p>
+        <div class="form-field form-field-name">
+          <label for="user-name" class="form-field-label">Name</label>
+          <input type="text" id="user-name" class="form-input" required />
+          <svg class="closebtn" width="18" height="18">
+          <use href="./images/icons.svg#icon-personicon"></use>
+        </svg>
+        </div>
+        <div class="form-field form-field-phone">
+          <label for="user-phone" class="form-field-label">Phone</label>
+          <input type="tel" id="user-phone" class="form-input" required />
+        </div>
+        <div class="form-field form-field-email">
+          <label for="user-email" class="form-field-label">Email</label>
+          <input type="email" id="user-email" class="form-input" required />
+        </div>
+        <div class="form-field form-field-comment"></div>
+        <label class="form-label">
+  Comment
+    <textarea
+      class="form-input"
+      name="comment"
+      placeholder="Text input"
+        rows="5">
+    </textarea>
+  </label>
+  </div>
+
+        <button type="submit" class="form-btn" id="launch-btn">
+          Send
+        </button>
+      </form>
+      </div>
+    </div>
   </body>
 </html>
