@@ -471,6 +471,11 @@ button {
   fill: #f4f4fd;
 }
 
+.form {
+  display: flex;
+  gap: 24px;
+}
+
 .footer-email {
   margin-left: auto;
 }
@@ -485,18 +490,26 @@ button {
 }
 
 .footer-form-input {
-  border: 1px solid #fff;
+  border: 1px solid #ffffff;
   border-radius: 4px;
-  width: 100%;
+  width: 264px;
+  height: 40px;
   padding: 8px 16px;
-  background-color: #2e2f42;
+  background-color: transparent;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+   color: #fff;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  font-size: 12px;
+  padding-left: 16px;
+   font-size: 12px;
+  color: #fff;
+  line-height: 2;
+  letter-spacing: 0.04em;
 }
 
 .footer-form-input::placeholder {
   color: #fff;
-  line-height: 2;
-  letter-spacing: 0.04em;
 }
 
 .footer-email-label {
@@ -516,6 +529,8 @@ button {
   display: flex;
   justify-content: center;
   gap: 16px;
+  min-width: 165px;
+  height: 40px;
   background-color: #4d5ae5;
   border-radius: 4px;
   padding-block: 8px;
@@ -527,7 +542,6 @@ button {
   text-align: center;
   color: #fff;
   border: none;
-  margin-left: 24px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
