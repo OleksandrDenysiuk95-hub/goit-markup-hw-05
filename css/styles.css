@@ -690,6 +690,10 @@ button {
   fill: #4d5ae5;
 }
 
+.form-field-comment {
+  margin-bottom: 16px;
+}
+
 .modal-textarea {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
@@ -728,6 +732,13 @@ button {
   margin-bottom: 24px;
 }
 
+.label-privacy {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+
 .checkbox-span {
   display: inline-flex;
   justify-content: center;
@@ -750,14 +761,16 @@ button {
 }
 
 .policy_link {
-  line-height: 1.33333;
   text-decoration: underline;
-  text-decoration-skip-ink: none;
+text-decoration-skip-ink: none;
+font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
   color: #4d5ae5;
 }
 
 .modal-send-btn {
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
   line-height: 1.5;
@@ -771,7 +784,7 @@ button {
   border-radius: 4px;
   padding-block: 16px;
   padding-inline: 32px;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
   border: none;
   margin-left: auto;
