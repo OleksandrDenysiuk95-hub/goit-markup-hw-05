@@ -715,8 +715,10 @@ button {
   color: rgba(46, 47, 66, 0.4);
 }
 
-.visually-hidden[type="checkbox"]:checked .label-privacy {
+.checkbox[type="checkbox"]:checked + .label-privacy > .checkbox-span {
   background-color:  #404bbf;
+  fill: #f4f4fd;
+  border: none;
 }
 
 .input-checkbox {
