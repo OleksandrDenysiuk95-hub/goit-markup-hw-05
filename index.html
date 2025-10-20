@@ -493,7 +493,7 @@
                 id="user-name"
                 name="user-name"
                 class="modal-form-input"
-                required
+                
               />
               <svg class="modal-icons" width="18" height="24">
                 <use href="./images/icons.svg#icon-personicon"></use>
@@ -506,8 +506,9 @@
               <input
                 type="tel"
                 id="user-phone"
+                name="user-phone"
                 class="modal-form-input"
-                required
+            
               />
               <svg class="modal-icons" width="18" height="24">
                 <use href="./images/icons.svg#icon-phoneicon"></use>
@@ -520,9 +521,9 @@
               <input
                 type="email"
                 id="user-email"
+                name="user-email"
                 class="modal-form-input"
-                value=""
-                required
+              
               />
               <svg class="modal-icons" width="18" height="24">
                 <use href="./images/icons.svg#icon-emailicon"></use>
@@ -546,6 +547,7 @@
               class="visually-hidden"
               value="true"
               name="user-privacy"
+            checked
             />
             <label for="user-privacy" class="label-privacy">
               <span class="checkbox-span">
@@ -553,9 +555,10 @@
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the 
+              I accept the terms and conditions of the
+            
+            <a class="policy_link" href=""> Privacy Policy </a>
             </label>
-              <a class="policy_link" href=""> Privacy Policy </a>
           </div>
           <button type="submit" class="modal-send-btn">Send</button>
         </form>

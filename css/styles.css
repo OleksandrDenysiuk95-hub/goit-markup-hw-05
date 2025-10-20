@@ -586,7 +586,6 @@ button {
   left: 50%;
   padding: 72px 24px 24px 24px;
   transform: translate(-50%, -50%);
-  padding: 24px;
   border-radius: 4px;
   background-color: #fcfcfc;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
@@ -612,8 +611,6 @@ button {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   stroke: rgba(0, 0, 0, 0.1);
-
-  margin-bottom: 24px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -637,7 +634,6 @@ button {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-top: 24px;
   text-align: center;
   color: #2e2f42;
   margin-bottom: 16px;
@@ -670,7 +666,7 @@ button {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-icons:focus {
+.form-field:focus-within .modal-icons {
   fill: #4d5ae5;
 }
 
@@ -719,6 +715,10 @@ button {
   color: rgba(46, 47, 66, 0.4);
 }
 
+.visually-hidden[type="checkbox"]:checked .label-privacy {
+  background-color:  #404bbf;
+}
+
 .input-checkbox {
   font-size: 12px;
   line-height: 1.17;
@@ -761,12 +761,8 @@ button {
 }
 
 .policy_link {
-  text-decoration: underline;
-text-decoration-skip-ink: none;
-font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
   color: #4d5ae5;
+  text-decoration: underline;
 }
 
 .modal-send-btn {
